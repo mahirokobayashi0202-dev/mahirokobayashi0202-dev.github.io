@@ -72,8 +72,15 @@
   }
 
   /* Profile block */
-  .profile { text-align: center; margin-bottom: 40px; }
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .profile-text { min-width: 0; }
   .avatar {
+    flex-shrink: 0;
     width: 168px;
     height: 168px;
     border-radius: 50%;
@@ -86,7 +93,7 @@
     font-weight: 600;
     font-size: 2.1rem;
     letter-spacing: -0.01em;
-    margin: 18px 0 4px;
+    margin: 0 0 4px;
   }
   .profile .title {
     color: var(--muted);
@@ -98,7 +105,6 @@
     padding: 0;
     margin: 16px 0 0;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 8px 10px;
     font-family: Inter, system-ui, sans-serif;
@@ -171,7 +177,8 @@
   @media (max-width: 520px) {
     body { font-size: 17px; }
     main { padding-top: 32px; }
-    .avatar { width: 136px; height: 136px; }
+    .profile { gap: 18px; }
+    .avatar { width: 104px; height: 104px; flex-shrink: 0; }
     .profile h1 { font-size: 1.75rem; }
     .topnav-inner { gap: 4px 18px; }
   }
@@ -190,12 +197,14 @@
 <main>
   <section id="home" class="profile">
     <img class="avatar" src="photo.jpg" alt="Photo of Mahiro Kobayashi">
+    <div class="profile-text">
     <h1>Mahiro Kobayashi</h1>
     <p class="title">PhD Student in Public Policy<br>Graduate School of Public Policy, The University of Tokyo</p>
     <ul class="links">
       <li><a href="cv.pdf">CV</a></li>
       <li><a href="mailto:kobayashi-mahiro470@g.ecc.u-tokyo.ac.jp">Email</a></li>
     </ul>
+    </div>
   </section>
 
   <section id="about">
