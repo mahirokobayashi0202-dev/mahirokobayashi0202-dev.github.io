@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahiro Kobayashi</title>
+<meta name="description" content="Mahiro Kobayashi, PhD student in Public Policy at the University of Tokyo. Development economics, climate and conflict.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1f2328;
+    --muted: #57606a;
+    --accent: #1a5f7a;
+    --rule: #d8dee4;
+    --bg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #e6edf3;
+      --muted: #9ba5b0;
+      --accent: #6cb6d9;
+      --rule: #30363d;
+      --bg: #0f1419;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 20px 72px;
+  }
+  header {
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  .photo {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  @media (max-width: 520px) {
+    header { flex-direction: column; align-items: flex-start; gap: 18px; }
+    .photo { width: 108px; height: 108px; }
+  }
+  h1 {
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 2.1rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+  }
+  .role {
+    font-family: Inter, system-ui, sans-serif;
+    color: var(--muted);
+    font-size: 1rem;
+    margin: 0;
+  }
+  nav {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.95rem;
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h2 {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 6px;
+    margin: 44px 0 18px;
+  }
+  p { margin: 0 0 14px; }
+  .paper-title { font-weight: 600; margin-bottom: 4px; }
+  .paper-meta {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .abstract { color: var(--text); font-size: 0.97rem; }
+  ul.plain { list-style: none; padding: 0; margin: 0; }
+  ul.plain li { margin-bottom: 10px; }
+  .when {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  footer {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 56px;
+  }
+  @media (max-width: 520px) {
+    body { font-size: 17px; }
+    main { padding-top: 36px; }
+    h1 { font-size: 1.75rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="photo" src="photo.jpg" alt="Photo of Mahiro Kobayashi">
+    <div>
+    <h1>Mahiro Kobayashi</h1>
+    <p class="role">PhD Student in Public Policy, Graduate School of Public Policy, The University of Tokyo</p>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#presentations">Presentations</a>
+      <a href="#teaching">Teaching</a>
+      <a href="cv.pdf">CV</a>
+      <a href="mailto:kobayashi-mahiro470@g.ecc.u-tokyo.ac.jp">Email</a>
+    </nav>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>I am a PhD student at the Graduate School of Public Policy, the University of Tokyo, advised by Professor Yoshito Takasaki. I work in development economics, studying how environmental shocks such as rainfall and flooding affect violent conflict.</p>
+    <p>I hold a Master of Public Policy and a Bachelor of Economics from the University of Tokyo. I will be a JSPS Research Fellow (DC2) from April 2027.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research in Progress</h2>
+    <p class="paper-title">Water Troubles Downstream: How Rivers Carry Rainfall Shocks to Conflict in India</p>
+    <p class="paper-meta">Previously circulated as “Dam It, Still No Peace? The Role of Dam Infrastructure in Mediating the Climate–Conflict Relationship in India”</p>
+    <p class="abstract">Most studies of rainfall and conflict assume that the only economically relevant rainfall is the one that fell locally or nearby. In a country crossed by large rivers that assumption may fail: rain that falls far upstream arrives downstream as river discharge and flooding. I study how upstream rainfall affects violent conflict downstream through river networks in India. I measure monsoon rainfall over each Indian district’s entire upstream drainage area on the hydrological network, and I simulate the river discharge this rain produces with two standard hydrological models. Upstream rainfall raises conflict events by 17 percent per standard deviation the following year, while the same monsoon’s local rain lowers them, so studies that use local rainfall alone mix two opposing effects. The simulated discharge intensifies conflict as well. The evidence points to the opportunity cost of fighting as the mechanism: the water arrives downstream as a hazard to farmers and lowers the return to legal work relative to fighting. The findings imply that flooding, not only drought, matters for conflict in India, and that existing policies and infrastructure may not be effective in mitigating a shock that arrives from upstream.</p>
+  </section>
+
+  <section id="presentations">
+    <h2>Presentations</h2>
+    <ul class="plain">
+      <li>2026 Asia Meeting of the Econometric Society, East &amp; Southeast Asia (AMES), Hanoi <span class="when">· July–August 2026 · also session chair</span></li>
+      <li>8th Annual Conference of the Japanese Association for Development Economics (JADE), Kyoto <span class="when">· April 2026</span></li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul class="plain">
+      <li>Teaching Assistant, Development Economics: Microeconomic Approach (Prof. Yoshito Takasaki), Graduate School of Public Policy <span class="when">· Autumn 2025</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Graduate School of Public Policy, The University of Tokyo<br>
+    <a href="mailto:kobayashi-mahiro470@g.ecc.u-tokyo.ac.jp">kobayashi-mahiro470@g.ecc.u-tokyo.ac.jp</a></p>
+  </section>
+
+  <footer>Last updated November 2026</footer>
+</main>
+</body>
+</html>
